@@ -43,7 +43,7 @@ public:
         int choice;
         
     do{
-        printf("1. the display the initial student details \n2. To enter a student info \n3. To display the student info\nEnter your choice\n");
+        printf("0. EXIT\n1. the display the initial student details \n2. To enter a student info \n3. To display the student info\nEnter your choice\n");
         scanf("%d",&choice);
 
 
@@ -72,3 +72,4 @@ public:
 
 return 0;
     }
+

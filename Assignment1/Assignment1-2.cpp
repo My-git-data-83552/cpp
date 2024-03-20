@@ -30,15 +30,23 @@ struct Date
     {
         cout << "The Date is - " << day << " / " << month << " / " << year << endl;
     }
+    bool isleap()
+    {
+        if((year%4==0 && year%100!=0) || (year % 400 == 0))
+        return true;
+        else
+        return false;
+    }
 };
 
 int main()
 {   
-    Date d1;
+    struct Date d1;
+    bool leap;
     int choice;
 
     do{
-        printf("1. the display the initial date \n2. To enter a date \n3. To display the date\nEnter your choice\n");
+        printf("0.EXIT\n1. the display the initial date \n2. To enter a date \n3. To display the date\n4. Check for leap year\nEnter your choice\n");
         scanf("%d",&choice);
 
 
@@ -58,13 +66,18 @@ int main()
         case 3:
             d1.printDateOnConsole();
             break;
+        case 4:
+            leap = d1.isleap();
+            if(leap == 1)
+            cout << "This is Leap year \n" <<endl;
+            else
+            cout << "This is not a Leap year \n" <<endl;
+            break;
         default:
             cout << "Wrong choice\n" << endl;
             break;
         }
         }
         while(choice!=0);
-
 return 0;
-
 }

@@ -28,7 +28,7 @@ struct Date
         struct Date mydate;
         int choice;
         do{
-        printf("1. the display the initial date \n2. To enter a date \n3. To display the date\nEnter your choice\n");
+        printf("0.EXIT\n1. the display the initial date \n2. To enter a date \n3. To display the date\nEnter your choice\n");
         scanf("%d",&choice);
 
 
