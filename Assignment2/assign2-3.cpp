@@ -79,17 +79,18 @@ int main(int argc, char const *argv[])
 {
     Address a1;
 
-    a1.acceptAddress();
-    a1.dispalyAddress();
-    a1.getBuilding();
-    a1.getStreet();
-    a1.getCity();
-    a1.getPin();
+    // a1.acceptAddress();
+    // a1.dispalyAddress();
+    
+    // a1.getBuilding();
+    // a1.getStreet();
+    // a1.getCity();
+    // a1.getPin();
 
-    a1.setBuilding("Sunbeam Institute");
-    a1.setStreet("shanivar Peth");
-    a1.setCity("Pune");
-    a1.setPin(410055);
-    a1.dispalyAddress();
+    // a1.setBuilding("Sunbeam Institute");
+    // a1.setStreet("shanivar Peth");
+    // a1.setCity("Pune");
+    // a1.setPin(410055);
+    // a1.dispalyAddress();
     return 0;
 }
