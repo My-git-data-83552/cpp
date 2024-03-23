@@ -31,22 +31,16 @@ public:
             index++;
         }
         else
-            cout << "The stack is Full"<<endl;
-        
+            cout << "The stack is Full" << endl;
     }
     void pop()
     {
         index--;
-        cout << "stack popped"<<endl;
+        cout << "stack popped" << endl;
     }
     void peek()
     {
-        cout << "Stack - ";
-        for (int i = 0; i < index; i++)
-        {
-            cout << ptr[i] << "\t";
-        }
-        cout << endl;
+        cout << "The top element is - " << ptr[index-1] << endl;
     }
     void isEmpty()
     {
@@ -64,13 +58,19 @@ public:
     }
     void print()
     {
-        int pos;
-        cout<<"Enter the position to check = ";
-        cin>>pos;
-        if(pos>=0 ||pos<index)
-        cout << ptr[pos]<<endl;
-        else
-        cout<<"Invalid input!"<<endl;
+        cout << "Stack - ";
+        for (int i = 0; i < index; i++)
+        {
+            cout << ptr[i] << "\t";
+        }
+        cout << endl;
+        // int pos;
+        // cout<<"Enter the position to check = ";
+        // cin>>pos;
+        // if(pos>=0 ||pos<index)
+        // cout << ptr[pos]<<endl;
+        // else
+        // cout<<"Invalid input!"<<endl;
     }
     ~Stack()
     {
@@ -108,7 +108,7 @@ int main()
         cout << "3. Peek" << endl;
         cout << "4. Check to see if Stack is Empty" << endl;
         cout << "5. Check to see if Stack is Full" << endl;
-        cout << "6. Peek at specific location" << endl;
+        cout << "6. Display all stack elemets" << endl;
         cout << "Enter your choice - ";
         cin >> choice;
         switch (Emenu(choice))
